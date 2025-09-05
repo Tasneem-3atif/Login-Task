@@ -1,0 +1,24 @@
+.container {
+  margin: calc(50vh - 150px) 0 0 auto;
+}
+
+nav .nav-bar :nth-last-child(1) {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  nav .nav-bar :nth-last-child(1) {
+    display: block;
+  }
+  nav :nth-last-child(2) {
+    display: none;
+  }
+}

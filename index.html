@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="bg-light p-5">
+    <div class="container mx-auto">
+      <div class="row">
+        <div class="bg-primary-subtle rounded p-4 text-center">
+          <h2 class="signUp">SignUp</h2>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="userName" />
+            <label for="userName">Name</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" />
+            <label for="email">Email</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="pass" />
+            <label for="pass">Password</label>
+          </div>
+
+          <div class="text-danger mb-3 fw-bold d-none" id="required">
+            All inputs is required
+          </div>
+          <div class="text-success mb-3 fw-bold d-none" id="success">
+            Success
+          </div>
+          <div class="text-danger mb-3 fw-bold d-none" id="exists">
+            email already exists
+          </div>
+          <button class="btn btn-outline-success d-block w-100">SignUp</button>
+
+          <p class="mt-4 text-dark">
+            You have an account?
+            <a href="/HTML/login.html" class="text-dark text-decoration-none"
+              >Login</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS Files -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/register.js"></script>
+  </body>
+</html>

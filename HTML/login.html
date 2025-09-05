@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body class="bg-light p-5">
+    <div class="container mx-auto">
+      <div class="row">
+        <div class="bg-success-subtle rounded p-4 text-center">
+          <h2 class="login">Login</h2>
+
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" />
+            <label for="email">Email</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="pass" />
+            <label for="pass">Password</label>
+          </div>
+
+          <div class="text-danger mb-3 fw-bold d-none" id="incorrect">
+            incorrect email or password
+          </div>
+
+          <div class="text-danger mb-3 fw-bold d-none" id="required">
+            All inputs is required
+          </div>
+
+          <button id="login" class="btn btn-outline-primary d-block w-100">
+            Login
+          </button>
+
+          <p class="mt-4 text-dark">
+            Don’t have an account?
+            <a href="/index.html" class="text-dark text-decoration-none"
+              >Sign Up
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS Files -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/login.js"></script>
+  </body>
+</html>
